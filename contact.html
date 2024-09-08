@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-link" id="navlinks">
+          <span class="material-symbols-outlined" onclick="hidemenu()">
+            close
+          </span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showmenu()">
+          menu
+        </span>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!-----Contact us----->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3636433.2575212154!2d78.21782054442964!3d27.118372728359354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39994e9f7b4a09d3%3A0xf6a5476d3617249d!2sUttar%20Pradesh!5e0!3m2!1sen!2sin!4v1725610802739!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div><h5>Address</h5>
+          <span><h5></h5>
+            <p> XYZ Road,ABC Building Banglore,Karnatka.IN</p>
+          </span></span></div>
+          <div><h5>Call Us</h5>
+            <span>
+              <p>91+ 9875624584</p>
+            </span></span></div>
+            <div><h5>Email Us</h5>
+              <span><h5></h5>
+                <p>Eduford@gmail.com</p>
+              </span></span></div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="Email" name="email" placeholder="Enter Your Email Address" required>
+            <input type="text" name="subject" placeholder="Enter Your Subject" required>
+            <textarea rows="8"name="message" placeholder="Message"></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-----Footer----->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum modi
+        animi eveniet excepturi quaerat! Reprehenderit inventore, facilis<br />
+        veritatis incidunt ratione aperiam atque eaque dolore animi architecto
+        corrupti, officiis maiores expedita!
+      </p>
+    </section>
+    <script>
+      var navlink = document.getElementById(navlink);
+      function showmenu() {
+        navlinks.style.right = "0px";
+      }
+      function hidemenu(navlink) {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

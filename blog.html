@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-link" id="navlinks">
+          <span class="material-symbols-outlined" onclick="hidemenu()">
+            close
+          </span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <span class="material-symbols-outlined" onclick="showmenu()">
+          menu
+        </span>
+      </nav>
+      <h1>Our Certificate & Online Program</h1>
+    </section>
+    <!-----Blog-content----->
+    <div class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="images/certificate.jpg" alt="" />
+          <h2>Our Certificate & Online Program</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime,
+            illum? Asperiores consectetur delectus perferendis iste hic?
+            Quibusdam, aut velit laboriosam voluptatibus, at placeat quas
+            inventore, rerum incidunt odio quis esse!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+            impedit dolorum porro corrupti officiis, dicta exercitationem sunt
+            commodi, animi ab facilis nulla voluptate enim debitis dolor magnam
+            modi atque cupiditate.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            velit error excepturi cumque, cupiditate tenetur inventore
+            voluptatem! Incidunt doloremque adipisci quis recusandae consequatur
+            laboriosam vero in porro, sed, et quibusdam.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+            impedit dolorum porro corrupti officiis, dicta exercitationem sunt
+            commodi, animi ab facilis nulla voluptate enim debitis dolor magnam
+            modi atque cupiditate.
+          </p>
+          
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="cooment-Form">
+                <input type="text" placeholder="Enter Name">
+                <input type="email" placeholder="Enter Email">
+                <textarea rows="5" placeholder="Your Comment"></textarea>
+                <button type="submit" class="hero-btn red-btn">Post Comment</button>              
+            </form>
+          </div>
+        </div>
+
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>81</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>52</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>89</span>
+            </div>
+            <div>
+                <span>Auto CAD</span>
+                <span>14</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>71</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-----Footer----->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum modi
+        animi eveniet excepturi quaerat! Reprehenderit inventore, facilis<br />
+        veritatis incidunt ratione aperiam atque eaque dolore animi architecto
+        corrupti, officiis maiores expedita!
+      </p>
+    </section>
+    
+    <script>
+      var navlink = document.getElementById(navlink);
+      function showmenu() {
+        navlinks.style.right = "0px";
+      }
+      function hidemenu(navlink) {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
